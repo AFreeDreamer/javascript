@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js_d4</title>
+    <style>
+        #div1 {width: 200px;height: 400px;background: red}
+    </style>
+    <script>
+        function setValue(name,value) {
+            var iBut=document.getElementById('div1');
+            iBut.style[name]=value
+        }
+    </script>
+</head>
+<body>
+<input id="in1" type="button" value="变灰" onclick="setValue('background','gray')">
+<input id="in2" type="button" value="变绿" onclick="setValue('width','500px')">
+<div id="div1"></div>
+</body>
+</html>
